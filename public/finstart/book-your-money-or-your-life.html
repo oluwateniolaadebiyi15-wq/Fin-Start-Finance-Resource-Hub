@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Money or Your Life — FinStart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dark mode toggle: hidden checkbox — CSS :has() does the rest, no JavaScript -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" />
+
+
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-logo" href="index.html" aria-label="FinStart Home">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="navbar-logo-img" />
+      </a>
+      <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="books.html" class="active">Books</a>
+        <a href="templates.html">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Login</a>
+        <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="icon-light">☀️ Light</span>
+          <span class="icon-dark">🌙 Dark</span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="book-detail-hero" aria-label="Book hero">
+      <div class="container">
+        <div class="book-detail-hero-inner">
+          <div class="book-detail-cover cover-5" aria-hidden="true">
+            <div class="spine"></div>
+            <div class="cover-text">Your Money or Your Life</div>
+          </div>
+          <div class="book-detail-meta">
+            <a href="books.html" class="back-link">← Back to Books</a>
+            <h1>Your Money or Your Life</h1>
+            <p class="book-detail-author">by Vicki Robin &amp; Joe Dominguez</p>
+            <div class="book-meta-pills">
+              <span class="meta-pill">1992</span>
+              <span class="meta-pill">368 pages</span>
+              <span class="meta-pill">Intermediate</span>
+              <span class="meta-pill">Values</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <section class="book-detail-body" aria-label="Book details">
+      <div class="container">
+        <div class="book-detail-layout">
+
+          <!-- Main content -->
+          <article class="book-detail-main" aria-label="Book overview">
+            <h2>Overview</h2>
+            <p>Your Money or Your Life is less about budgeting and more about transforming your entire relationship with money, work, and meaning. Vicki Robin and Joe Dominguez introduce the concept of "life energy" — every dollar you spend represents a certain number of hours of your life that you traded for it. When you see money through this lens, every purchase becomes a question: "Is this worth my life energy?"</p>
+            <p>The book was ahead of its time in its critique of consumerism and its vision of financial independence as a path to personal freedom, not just a retirement number. It's particularly relevant today given the "FIRE" (Financial Independence, Retire Early) movement that drew heavily from its ideas. The book is philosophical and reflective — expect it to challenge assumptions, not just give you a to-do list.</p>
+
+            <h2>Key Takeaways</h2>
+            <div class="takeaways-list">
+              <div class="takeaway-item">
+                <span class="takeaway-num">1</span>
+                <p>"Life energy" reframes money: calculate your real hourly wage (after commuting, work clothes, decompression time) to understand what purchases truly cost in hours of your life.</p>
+              </div>
+              <div class="takeaway-item">
+                <span class="takeaway-num">2</span>
+                <p>Track every cent in and out, not to create a budget, but to develop an honest awareness of where your life energy is going.</p>
+              </div>
+              <div class="takeaway-item">
+                <span class="takeaway-num">3</span>
+                <p>Question whether spending in each category brings fulfilment proportional to its cost in life energy. This conscious evaluation is more powerful than arbitrary spending limits.</p>
+              </div>
+              <div class="takeaway-item">
+                <span class="takeaway-num">4</span>
+                <p>"Enough" is a concept the consumer economy never teaches. Knowing your "enough point" — the level of spending that brings genuine satisfaction — is the key to financial freedom.</p>
+              </div>
+              <div class="takeaway-item">
+                <span class="takeaway-num">5</span>
+                <p>Financial independence is about having enough passive income to cover your needs, freeing you to spend your time on what matters — not necessarily about retiring young.</p>
+              </div>
+            </div>
+
+            <div class="book-quote">
+              <blockquote>"Money is something we choose to trade our life energy for."</blockquote>
+              <cite>— Vicki Robin</cite>
+            </div>
+          </article>
+
+          <!-- Sidebar -->
+          <aside class="book-sidebar-card" aria-label="Book facts">
+            <h3>Book Facts</h3>
+            <ul class="book-facts-list">
+              <li class="book-fact"><span class="fact-label">Author</span><span class="fact-value">Vicki Robin &amp; Joe Dominguez</span></li>
+              <li class="book-fact"><span class="fact-label">Year</span><span class="fact-value">1992 (revised 2008)</span></li>
+              <li class="book-fact"><span class="fact-label">Pages</span><span class="fact-value">368</span></li>
+              <li class="book-fact"><span class="fact-label">Level</span><span class="fact-value">Intermediate</span></li>
+              <li class="book-fact"><span class="fact-label">Category</span><span class="fact-value">Values / FIRE</span></li>
+            </ul>
+
+            <h3>Who Should Read This</h3>
+            <ul class="who-list">
+              <li>People who feel they earn well but still feel unfulfilled</li>
+              <li>Those interested in financial independence or the FIRE movement</li>
+              <li>Readers who want to question their relationship with work and money</li>
+              <li>Anyone who wants a values-based approach to personal finance</li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="FinStart Home">
+            <img src="img/logo-new.jpg" alt="FinStart logo" class="footer-logo-img" />
+          </a>
+          <p>A free personal finance resource hub for young adults and students exploring budgeting for the very first time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Budgeting Rules</a></li>
+            <li><a href="books.html">Resource Library</a></li>
+            <li><a href="templates.html">Worksheets</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="rules.html">50/30/20 Rule</a></li>
+            <li><a href="rules.html">Pay Yourself First</a></li>
+            <li><a href="rules.html">Emergency Fund</a></li>
+            <li><a href="books.html">Beginner Books</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 FinStart. Free to use and share.</p>
+        <p class="footer-disclaimer">For educational purposes only. Not professional financial advice.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

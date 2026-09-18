@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — FinStart</title>
+  <meta name="description" content="Personal finance articles, tips, and insights for young adults from the FinStart team." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dark mode toggle: hidden checkbox — CSS :has() does the rest, no JavaScript -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" />
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-logo" href="index.html" aria-label="FinStart Home">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="navbar-logo-img" />
+      </a>
+      <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="books.html">Books</a>
+        <a href="templates.html">Templates</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="login.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Login</a>
+        <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="icon-light">☀️ Light</span>
+          <span class="icon-dark">🌙 Dark</span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== PAGE HEADER ===================== -->
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow">✍️ Articles &amp; Insights</p>
+        <h1>The FinStart Blog</h1>
+        <p>Short, practical reads on budgeting, money mindset, and building financial confidence — written for real people, not economists.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED ARTICLE ===================== -->
+    <section style="padding: 56px 0 0;">
+      <div class="container">
+
+        <article style="
+          background: var(--card-bg);
+          border: 1px solid var(--border);
+          border-radius: 14px;
+          display: grid;
+          grid-template-columns: 260px 1fr;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+          margin-bottom: 48px;
+        ">
+          <!-- Left accent panel with emoji illustration -->
+          <div style="background: linear-gradient(160deg, #2B7A78, #3AAFA9); display:flex; align-items:center; justify-content:center; font-size:4rem; padding: 40px;">
+            💡
+          </div>
+
+          <!-- Right content panel -->
+          <div style="padding: 36px 32px;">
+            <!-- Category pill -->
+            <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; display: inline-block; margin-bottom: 12px;">
+              Getting Started
+            </span>
+
+            <h2 style="color: var(--text-dark); font-size: 1.5rem; margin-bottom: 12px;">
+              Why Your Budget Keeps Failing — And How to Fix It in 10 Minutes
+            </h2>
+
+            <p style="color: var(--text-body); line-height: 1.7; margin-bottom: 20px;">
+              Most people don't fail at budgeting because they lack discipline. They fail because their budget was never designed for real life. Here's how to build one that actually sticks — starting today, with nothing but a pen and this article.
+            </p>
+
+            <!-- Meta row -->
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 20px;">
+              15 Sept 2025 &nbsp;·&nbsp; 6 min read &nbsp;·&nbsp; Adebiyi Oluwateniola
+            </p>
+
+            <a href="#" class="btn btn-outline" style="margin-top: 0;">Read article →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== ARTICLE CARDS GRID ===================== -->
+    <section style="padding: 0 0 80px;">
+      <div class="container">
+
+        <!-- Section header -->
+        <div class="section-header">
+          <p class="eyebrow">Latest Articles</p>
+          <h2>More From the Blog</h2>
+        </div>
+
+        <!-- Card grid -->
+        <div class="card-grid">
+
+          <!-- Article 1: Money Mindset -->
+          <article class="card" style="padding: 0; overflow: hidden;">
+            <div style="height: 4px; background: linear-gradient(90deg, #2B7A78, #3AAFA9);"></div>
+            <div style="padding: 28px 24px;">
+              <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 4px 12px; border-radius: 100px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; display: inline-block; margin-bottom: 12px;">
+                Money Mindset
+              </span>
+              <h3 style="font-size: 1.05rem; margin-bottom: 10px; line-height: 1.4;">
+                5 Money Lessons We Wish Someone Had Told Us at 18
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-body); line-height: 1.6; margin-bottom: 18px;">
+                The things they don't teach in school that would have saved us years of financial confusion. Written by people who learned them the hard way.
+              </p>
+              <!-- Meta row -->
+              <div style="display: flex; align-items: center; gap: 10px; font-size: 0.78rem; color: var(--text-muted);">
+                <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">A</span>
+                <span>8 Sept 2025</span>
+                <span>·</span>
+                <span>5 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2: Student Finance -->
+          <article class="card" style="padding: 0; overflow: hidden;">
+            <div style="height: 4px; background: linear-gradient(90deg, #3AAFA9, #5bc8c3);"></div>
+            <div style="padding: 28px 24px;">
+              <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 4px 12px; border-radius: 100px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; display: inline-block; margin-bottom: 12px;">
+                Student Finance
+              </span>
+              <h3 style="font-size: 1.05rem; margin-bottom: 10px; line-height: 1.4;">
+                How to Build a ₦50,000 Emergency Fund on a Student Budget
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-body); line-height: 1.6; margin-bottom: 18px;">
+                Starting an emergency fund when you're a student feels impossible — until you see how small the steps actually need to be. Here's the exact method.
+              </p>
+              <div style="display: flex; align-items: center; gap: 10px; font-size: 0.78rem; color: var(--text-muted);">
+                <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">O</span>
+                <span>1 Sept 2025</span>
+                <span>·</span>
+                <span>4 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3: Budgeting Tips -->
+          <article class="card" style="padding: 0; overflow: hidden;">
+            <div style="height: 4px; background: linear-gradient(90deg, #2B7A78, #5bc8c3);"></div>
+            <div style="padding: 28px 24px;">
+              <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 4px 12px; border-radius: 100px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; display: inline-block; margin-bottom: 12px;">
+                Budgeting Tips
+              </span>
+              <h3 style="font-size: 1.05rem; margin-bottom: 10px; line-height: 1.4;">
+                The 50/30/20 Rule With Real Nigerian Numbers
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-body); line-height: 1.6; margin-bottom: 18px;">
+                Everyone quotes the 50/30/20 rule. But what does it actually look like on a ₦120,000 monthly salary in Lagos? We did the math.
+              </p>
+              <div style="display: flex; align-items: center; gap: 10px; font-size: 0.78rem; color: var(--text-muted);">
+                <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">A</span>
+                <span>22 Aug 2025</span>
+                <span>·</span>
+                <span>7 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4: Book Insights -->
+          <article class="card" style="padding: 0; overflow: hidden;">
+            <div style="height: 4px; background: linear-gradient(90deg, #3AAFA9, #2B7A78);"></div>
+            <div style="padding: 28px 24px;">
+              <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 4px 12px; border-radius: 100px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; display: inline-block; margin-bottom: 12px;">
+                Book Insights
+              </span>
+              <h3 style="font-size: 1.05rem; margin-bottom: 10px; line-height: 1.4;">
+                What 'The Psychology of Money' Actually Taught Us
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-body); line-height: 1.6; margin-bottom: 18px;">
+                Morgan Housel's book isn't about stocks or budgets — it's about why smart people make terrible money decisions, and how to stop. Our honest takeaway.
+              </p>
+              <div style="display: flex; align-items: center; gap: 10px; font-size: 0.78rem; color: var(--text-muted);">
+                <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">O</span>
+                <span>14 Aug 2025</span>
+                <span>·</span>
+                <span>8 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 5: Debt & Credit -->
+          <article class="card" style="padding: 0; overflow: hidden;">
+            <div style="height: 4px; background: linear-gradient(90deg, #5bc8c3, #2B7A78);"></div>
+            <div style="padding: 28px 24px;">
+              <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 4px 12px; border-radius: 100px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; display: inline-block; margin-bottom: 12px;">
+                Debt &amp; Credit
+              </span>
+              <h3 style="font-size: 1.05rem; margin-bottom: 10px; line-height: 1.4;">
+                Zero-Based Budgeting: The System That Makes Every Naira Count
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-body); line-height: 1.6; margin-bottom: 18px;">
+                If you've ever reached the end of the month wondering where your money went, zero-based budgeting might be the most important thing you read this year.
+              </p>
+              <div style="display: flex; align-items: center; gap: 10px; font-size: 0.78rem; color: var(--text-muted);">
+                <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">A</span>
+                <span>6 Aug 2025</span>
+                <span>·</span>
+                <span>6 min</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 6: Getting Started -->
+          <article class="card" style="padding: 0; overflow: hidden;">
+            <div style="height: 4px; background: linear-gradient(90deg, #2B7A78, #3AAFA9);"></div>
+            <div style="padding: 28px 24px;">
+              <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 4px 12px; border-radius: 100px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; display: inline-block; margin-bottom: 12px;">
+                Getting Started
+              </span>
+              <h3 style="font-size: 1.05rem; margin-bottom: 10px; line-height: 1.4;">
+                Your First Paycheck: The Exact 4-Step Plan We Recommend
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-body); line-height: 1.6; margin-bottom: 18px;">
+                You just got your first real salary. Before you do anything else, take 30 minutes to follow these four steps. Future-you will be grateful.
+              </p>
+              <div style="display: flex; align-items: center; gap: 10px; font-size: 0.78rem; color: var(--text-muted);">
+                <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">A</span>
+                <span>28 Jul 2025</span>
+                <span>·</span>
+                <span>5 min</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.card-grid -->
+
+        <!-- ===================== NEWSLETTER CTA ===================== -->
+        <div style="
+          background: linear-gradient(135deg, #2B7A78, #3AAFA9);
+          border-radius: 16px;
+          padding: 48px;
+          text-align: center;
+          margin-top: 56px;
+          color: white;
+        ">
+          <h2 style="color:white; margin-bottom:12px;">Never Miss a Post</h2>
+          <p style="color:rgba(255,255,255,0.8); margin-bottom:24px; max-width:480px; margin-inline:auto;">
+            New articles every week on budgeting, money mindset, and financial freedom. Join thousands of young Nigerians learning to make their money work.
+          </p>
+          <a href="login.html" class="btn" style="background:white; color:#2B7A78; border:none; font-weight:700;">
+            Create Free Account →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="FinStart Home">
+            <img src="img/logo-new.jpg" alt="FinStart logo" class="footer-logo-img" />
+          </a>
+          <p>A free personal finance resource hub for young adults and students exploring budgeting for the very first time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Budgeting Rules</a></li>
+            <li><a href="books.html">Resource Library</a></li>
+            <li><a href="templates.html">Worksheets</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="rules.html">50/30/20 Rule</a></li>
+            <li><a href="rules.html">Pay Yourself First</a></li>
+            <li><a href="rules.html">Emergency Fund</a></li>
+            <li><a href="books.html">Beginner Books</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 FinStart. Free to use and share.</p>
+        <p class="footer-disclaimer">For educational purposes only. Not professional financial advice.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Log in or create a free FinStart account to save your budgeting progress." />
+  <title>Login / Register — FinStart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dark mode toggle: hidden checkbox — CSS :has() does the rest, no JavaScript -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" />
+
+
+  <!-- ========================================================
+       NAVIGATION BAR
+  ======================================================== -->
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-logo" href="index.html" aria-label="FinStart Home">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="navbar-logo-img" />
+      </a>
+      <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="books.html">Books</a>
+        <a href="templates.html">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-primary active" style="padding: 8px 18px; font-size: 0.85rem;">Login</a>
+        <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="icon-light">☀️ Light</span>
+          <span class="icon-dark">🌙 Dark</span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       AUTH WRAPPER
+       CSS-only tab switching uses hidden radio buttons.
+       The :checked sibling combinator controls which panel shows.
+       No JavaScript required.
+  ======================================================== -->
+  <main class="auth-wrapper" aria-label="Login and registration">
+
+    <div class="auth-card">
+
+      <!-- Card header: logo + tagline -->
+      <div class="auth-card-header">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="footer-logo-img" />
+        <h2>Welcome to FinStart</h2>
+        <p>Your free personal finance learning hub</p>
+      </div>
+
+      <!--
+        CSS-ONLY TAB SWITCHING
+        Two hidden radio inputs control the visible panel.
+        Labels act as tab buttons; :checked triggers the CSS show/hide.
+        The "login" tab is checked by default so it shows first.
+      -->
+      <input class="auth-tabs" type="radio" name="auth-tab" id="tab-login" checked />
+      <input class="auth-tabs" type="radio" name="auth-tab" id="tab-register" />
+
+      <!-- Tab label buttons -->
+      <div class="auth-tab-labels" role="tablist" aria-label="Login or create account">
+        <label for="tab-login" role="tab">Log In</label>
+        <label for="tab-register" role="tab">Create Account</label>
+      </div>
+
+      <!-- ────────────────────────────────────────────────────
+           LOGIN PANEL
+           Visible when #tab-login is checked (default)
+      ──────────────────────────────────────────────────── -->
+      <div class="auth-panel login-panel" role="tabpanel" aria-label="Log in form">
+
+        <form action="#" method="post" novalidate aria-label="Log in">
+
+          <div class="form-group">
+            <label for="login-email">Email Address</label>
+            <input
+              type="email"
+              id="login-email"
+              name="email"
+              placeholder="your@email.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">
+              Password
+              <!-- Forgot password link — right-aligned via flexbox on parent -->
+              <a href="#"
+                 style="float: right; font-size: 0.78rem; font-weight: 400; color: var(--mint);">
+                Forgot password?
+              </a>
+            </label>
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              placeholder="••••••••"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <!-- Remember me checkbox -->
+          <div class="form-checkbox">
+            <input type="checkbox" id="remember-me" name="remember" />
+            <label for="remember-me">Keep me signed in on this device</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Log In →
+          </button>
+
+        </form>
+
+        <div class="auth-divider">or continue with</div>
+
+        <!-- Social login buttons (HTML-only, no JS actions) -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+
+          <button type="button" class="btn btn-outline" style="justify-content: center; gap: 8px; padding: 10px 16px; font-size: 0.85rem;">
+            <!-- Google "G" icon using text -->
+            <span style="
+              width: 18px;
+              height: 18px;
+              background: linear-gradient(135deg, #4285f4 25%, #ea4335 25% 50%, #fbbc04 50% 75%, #34a853 75%);
+              border-radius: 50%;
+              display: inline-block;
+              flex-shrink: 0;
+            " aria-hidden="true"></span>
+            Google
+          </button>
+
+          <button type="button" class="btn btn-outline" style="justify-content: center; gap: 8px; padding: 10px 16px; font-size: 0.85rem;">
+            <span style="
+              width: 18px;
+              height: 18px;
+              background: #1877f2;
+              border-radius: 4px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: 700;
+              font-size: 0.75rem;
+              flex-shrink: 0;
+            " aria-hidden="true">f</span>
+            Facebook
+          </button>
+
+        </div>
+
+        <p class="auth-footer-note">
+          Don't have an account?
+          <!-- Clicking this label checks #tab-register, switching the panel -->
+          <label for="tab-register" style="color: var(--mint); font-weight: 600; cursor: pointer;">
+            Create one free →
+          </label>
+        </p>
+
+      </div><!-- /.login-panel -->
+
+      <!-- ────────────────────────────────────────────────────
+           REGISTER PANEL
+           Visible when #tab-register is checked
+      ──────────────────────────────────────────────────── -->
+      <div class="auth-panel register-panel" role="tabpanel" aria-label="Create account form">
+
+        <form action="#" method="post" novalidate aria-label="Create a free account">
+
+          <!-- Required fields note -->
+          <p style="font-size:0.78rem; color:var(--text-muted); margin-bottom:18px;">
+            Fields marked <span style="color:var(--mint); font-weight:700;">*</span> are required.
+          </p>
+
+          <!-- Full name row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reg-first-name">First Name <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+              <input type="text" id="reg-first-name" name="first_name"
+                placeholder="e.g. Teniola" autocomplete="given-name" required />
+            </div>
+            <div class="form-group">
+              <label for="reg-last-name">Last Name <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+              <input type="text" id="reg-last-name" name="last_name"
+                placeholder="e.g. Adebiyi" autocomplete="family-name" required />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="reg-email">Email Address <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+            <input type="email" id="reg-email" name="email"
+              placeholder="your@email.com" autocomplete="email" required />
+          </div>
+
+          <!-- Phone number -->
+          <div class="form-group">
+            <label for="reg-phone">Phone Number <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+            <input type="tel" id="reg-phone" name="phone"
+              placeholder="+234 800 000 0000" autocomplete="tel" required />
+          </div>
+
+          <!-- Date of birth + Gender row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reg-dob">Date of Birth <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+              <input type="date" id="reg-dob" name="dob" autocomplete="bday" required />
+            </div>
+            <div class="form-group">
+              <label for="reg-gender">Gender <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+              <select id="reg-gender" name="gender" required>
+                <option value="" disabled selected>Select…</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="prefer-not">Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Country -->
+          <div class="form-group">
+            <label for="reg-country">Country <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+            <select id="reg-country" name="country" required>
+              <option value="" disabled selected>Select your country…</option>
+              <option value="ng">🇳🇬 Nigeria</option>
+              <option value="gh">🇬🇭 Ghana</option>
+              <option value="ke">🇰🇪 Kenya</option>
+              <option value="za">🇿🇦 South Africa</option>
+              <option value="uk">🇬🇧 United Kingdom</option>
+              <option value="us">🇺🇸 United States</option>
+              <option value="ca">🇨🇦 Canada</option>
+              <option value="other">🌍 Other</option>
+            </select>
+          </div>
+
+          <!-- Occupation status -->
+          <div class="form-group">
+            <label for="reg-occupation">Occupation Status <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+            <select id="reg-occupation" name="occupation" required>
+              <option value="" disabled selected>Select your status…</option>
+              <option value="student">Student (secondary school)</option>
+              <option value="university">University / College student</option>
+              <option value="nysc">NYSC / National service</option>
+              <option value="employed">Employed (full-time)</option>
+              <option value="part-time">Employed (part-time)</option>
+              <option value="self-employed">Self-employed / Freelancer</option>
+              <option value="unemployed">Currently unemployed</option>
+            </select>
+          </div>
+
+          <!-- Primary financial goal -->
+          <div class="form-group">
+            <label for="reg-goal">Primary Financial Goal <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+            <select id="reg-goal" name="goal" required>
+              <option value="" disabled selected>What do you most want to achieve?</option>
+              <option value="save-more">💰 Save more money consistently</option>
+              <option value="pay-debt">📉 Pay off debt faster</option>
+              <option value="emergency-fund">🛡️ Build an emergency fund</option>
+              <option value="start-investing">📈 Start investing for the first time</option>
+              <option value="learn-basics">📚 Understand personal finance basics</option>
+              <option value="budget-better">📋 Create and stick to a budget</option>
+            </select>
+          </div>
+
+          <!-- Monthly income range (optional) -->
+          <div class="form-group">
+            <label for="reg-income">Monthly Income Range
+              <span style="font-size:0.75rem; font-weight:400; color:var(--text-muted);">(optional)</span>
+            </label>
+            <select id="reg-income" name="income_range">
+              <option value="" selected>Prefer not to say</option>
+              <option value="under-50k">Under ₦50,000 / month</option>
+              <option value="50k-150k">₦50,000 – ₦150,000 / month</option>
+              <option value="150k-500k">₦150,000 – ₦500,000 / month</option>
+              <option value="500k-plus">Above ₦500,000 / month</option>
+              <option value="student-allowance">Student allowance only</option>
+            </select>
+            <p class="input-hint">This helps us tailor content for your situation. Completely optional.</p>
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <label for="reg-password">Password <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+            <input type="password" id="reg-password" name="password"
+              placeholder="At least 8 characters" autocomplete="new-password"
+              required minlength="8" />
+            <p class="input-hint">Use at least 8 characters, including a number or symbol.</p>
+          </div>
+
+          <!-- Confirm password -->
+          <div class="form-group">
+            <label for="reg-confirm">Confirm Password <span style="color:var(--mint);" aria-hidden="true">*</span></label>
+            <input type="password" id="reg-confirm" name="password_confirm"
+              placeholder="Repeat your password" autocomplete="new-password" required />
+          </div>
+
+          <!-- Terms & conditions -->
+          <div class="form-checkbox">
+            <input type="checkbox" id="reg-terms" name="terms" required />
+            <label for="reg-terms">
+              I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+              I understand FinStart provides educational content only — not professional financial advice.
+            </label>
+          </div>
+
+          <!-- Newsletter opt-in -->
+          <div class="form-checkbox">
+            <input type="checkbox" id="reg-newsletter" name="newsletter" />
+            <label for="reg-newsletter">
+              Send me occasional finance tips and new content updates (optional).
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Create Free Account →
+          </button>
+
+        </form>
+
+        <p class="auth-footer-note">
+          Already have an account?
+          <label for="tab-login" style="color: var(--mint); font-weight: 600; cursor: pointer;">
+            Log in here →
+          </label>
+        </p>
+
+      </div><!-- /.register-panel -->
+
+    </div><!-- /.auth-card -->
+
+  </main>
+
+  <!-- ========================================================
+       MINIMAL FOOTER (login page only needs a simple one)
+  ======================================================== -->
+  <footer style="
+    background: var(--footer-bg);
+    padding: 24px 0;
+    text-align: center;
+  " aria-label="Footer">
+    <div class="container">
+      <p style="font-size: 0.8rem; color: rgba(255,255,255,0.35);">
+        © 2025 FinStart · <a href="about.html" style="color: rgba(255,255,255,0.4);">About</a> ·
+        <a href="contact.html" style="color: rgba(255,255,255,0.4);">Contact</a> ·
+        Educational purposes only — not professional financial advice.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Automatic Millionaire — FinStart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dark mode toggle: hidden checkbox — CSS :has() does the rest, no JavaScript -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" />
+
+
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-logo" href="index.html" aria-label="FinStart Home">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="navbar-logo-img" />
+      </a>
+      <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="books.html" class="active">Books</a>
+        <a href="templates.html">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Login</a>
+        <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="icon-light">☀️ Light</span>
+          <span class="icon-dark">🌙 Dark</span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="book-detail-hero" aria-label="Book hero">
+      <div class="container">
+        <div class="book-detail-hero-inner">
+          <div class="book-detail-cover cover-4" aria-hidden="true">
+            <div class="spine"></div>
+            <div class="cover-text">The Automatic Millionaire</div>
+          </div>
+          <div class="book-detail-meta">
+            <a href="books.html" class="back-link">← Back to Books</a>
+            <h1>The Automatic Millionaire</h1>
+            <p class="book-detail-author">by David Bach</p>
+            <div class="book-meta-pills">
+              <span class="meta-pill">2003</span>
+              <span class="meta-pill">240 pages</span>
+              <span class="meta-pill">Beginner</span>
+              <span class="meta-pill">Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Body -->
+    <section class="book-detail-body" aria-label="Book details">
+      <div class="container">
+        <div class="book-detail-layout">
+
+          <!-- Main content -->
+          <article class="book-detail-main" aria-label="Book overview">
+            <h2>Overview</h2>
+            <p>David Bach's core argument is beautifully simple: you don't need discipline, a budget, or willpower to become wealthy. You just need to automate your finances and get out of the way. The book was one of the first to popularise the idea that ordinary, middle-income people can become millionaires simply by automating small, consistent savings over long time periods — no extraordinary income required.</p>
+            <p>Bach introduces the famous "Latte Factor" concept — the idea that seemingly small daily purchases (a $5 coffee, a $10 lunch, a $15 subscription) compound into hundreds of thousands of dollars over a lifetime when those same amounts are instead invested. Whether or not you agree with the coffee analogy, the underlying math about compounding is real and worth understanding.</p>
+
+            <h2>Key Takeaways</h2>
+            <div class="takeaways-list">
+              <div class="takeaway-item">
+                <span class="takeaway-num">1</span>
+                <p>Automate everything: set up automatic transfers to savings, retirement, and investment accounts so you never have to decide to save — it just happens.</p>
+              </div>
+              <div class="takeaway-item">
+                <span class="takeaway-num">2</span>
+                <p>The "Latte Factor" shows that small, consistent amounts invested early outperform large sums invested late, thanks to compound interest.</p>
+              </div>
+              <div class="takeaway-item">
+                <span class="takeaway-num">3</span>
+                <p>Pay yourself first — before tax if possible (via employer retirement contributions), then after tax into savings accounts.</p>
+              </div>
+              <div class="takeaway-item">
+                <span class="takeaway-num">4</span>
+                <p>Own your home rather than rent if financially feasible — the forced savings through mortgage repayment builds equity automatically.</p>
+              </div>
+              <div class="takeaway-item">
+                <span class="takeaway-num">5</span>
+                <p>You don't need to be rich to become rich. A middle-income earner who automates $200/month from age 25 can retire a millionaire.</p>
+              </div>
+            </div>
+
+            <div class="book-quote">
+              <blockquote>"You don't need to make a lot of money to become rich. You need to be consistent."</blockquote>
+              <cite>— David Bach</cite>
+            </div>
+          </article>
+
+          <!-- Sidebar -->
+          <aside class="book-sidebar-card" aria-label="Book facts">
+            <h3>Book Facts</h3>
+            <ul class="book-facts-list">
+              <li class="book-fact"><span class="fact-label">Author</span><span class="fact-value">David Bach</span></li>
+              <li class="book-fact"><span class="fact-label">Year</span><span class="fact-value">2003</span></li>
+              <li class="book-fact"><span class="fact-label">Pages</span><span class="fact-value">240</span></li>
+              <li class="book-fact"><span class="fact-label">Level</span><span class="fact-value">Beginner</span></li>
+              <li class="book-fact"><span class="fact-label">Category</span><span class="fact-value">Automation / Savings</span></li>
+            </ul>
+
+            <h3>Who Should Read This</h3>
+            <ul class="who-list">
+              <li>People who struggle with budgeting or willpower around money</li>
+              <li>Anyone who wants to "set it and forget it" with their finances</li>
+              <li>Young adults who want to start investing with small amounts</li>
+              <li>Readers who want a short, fast read with immediate action steps</li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="FinStart Home">
+            <img src="img/logo-new.jpg" alt="FinStart logo" class="footer-logo-img" />
+          </a>
+          <p>A free personal finance resource hub for young adults and students exploring budgeting for the very first time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Budgeting Rules</a></li>
+            <li><a href="books.html">Resource Library</a></li>
+            <li><a href="templates.html">Worksheets</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="rules.html">50/30/20 Rule</a></li>
+            <li><a href="rules.html">Pay Yourself First</a></li>
+            <li><a href="rules.html">Emergency Fund</a></li>
+            <li><a href="books.html">Beginner Books</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 FinStart. Free to use and share.</p>
+        <p class="footer-disclaimer">For educational purposes only. Not professional financial advice.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

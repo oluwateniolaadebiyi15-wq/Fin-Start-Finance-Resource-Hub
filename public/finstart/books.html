@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Six beginner-friendly personal finance books every young adult should know about." />
+  <title>Resource Library — FinStart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dark mode toggle: hidden checkbox — CSS :has() does the rest, no JavaScript -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" />
+
+
+  <!-- ========================================================
+       NAVIGATION BAR
+  ======================================================== -->
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-logo" href="index.html" aria-label="FinStart Home">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="navbar-logo-img" />
+      </a>
+      <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="books.html" class="active">Books</a>
+        <a href="templates.html">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Login</a>
+        <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="icon-light">☀️ Light</span>
+          <span class="icon-dark">🌙 Dark</span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       PAGE HEADER
+  ======================================================== -->
+  <section class="page-header" aria-label="Page title">
+    <div class="container">
+      <span class="eyebrow">📚 Beginner Reading List</span>
+      <h1>Resource Library</h1>
+      <p>
+        Six hand-picked books that make money management approachable —
+        no economics degree required. Click any book to read a full summary.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       MAIN CONTENT — Book Card Grid
+       Each card links to its own detail page.
+  ======================================================== -->
+  <main>
+    <section style="padding: var(--section-gap) 0;" aria-labelledby="books-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="books-heading">Start With Any of These Six</h2>
+          <p>Each one is written for everyday people, not finance professionals. Click a book to read the full summary, key takeaways, and notable quotes.</p>
+        </div>
+
+        <!-- Book cards — CSS Grid auto-fill, 3 cols → 2 → 1 -->
+        <div class="card-grid">
+
+          <!-- ── Book 1 ─────────────────────────────────────── -->
+          <article class="book-card">
+            <!-- The entire card is wrapped in an anchor so the whole card is clickable -->
+            <a href="book-i-will-teach.html" class="book-card-link" aria-label="Read summary: I Will Teach You to Be Rich by Ramit Sethi">
+              <div class="book-cover cover-1" aria-hidden="true">
+                <div class="book-cover-spine"></div>
+                <span class="book-cover-title">I Will Teach You to Be Rich</span>
+              </div>
+            </a>
+            <div class="book-info">
+              <span class="book-author">Ramit Sethi</span>
+              <h3><a href="book-i-will-teach.html">I Will Teach You to Be Rich</a></h3>
+              <p>
+                A no-guilt, actionable 6-week plan that covers automating
+                savings, picking the right accounts, and investing on
+                autopilot — written for people in their 20s and 30s.
+              </p>
+              <span class="book-level">🟢 Best for: Total Beginners</span>
+              <a href="book-i-will-teach.html" style="
+                display: inline-block;
+                margin-top: 14px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: var(--teal);
+              ">Read summary →</a>
+            </div>
+          </article>
+
+          <!-- ── Book 2 ─────────────────────────────────────── -->
+          <article class="book-card">
+            <a href="book-total-money-makeover.html" class="book-card-link" aria-label="Read summary: The Total Money Makeover by Dave Ramsey">
+              <div class="book-cover cover-2" aria-hidden="true">
+                <div class="book-cover-spine"></div>
+                <span class="book-cover-title">The Total Money Makeover</span>
+              </div>
+            </a>
+            <div class="book-info">
+              <span class="book-author">Dave Ramsey</span>
+              <h3><a href="book-total-money-makeover.html">The Total Money Makeover</a></h3>
+              <p>
+                A step-by-step "Baby Steps" plan to pay off debt and build
+                wealth — starting with a $1,000 emergency fund. Very structured
+                and motivating for debt payoff journeys.
+              </p>
+              <span class="book-level">🟢 Best for: Paying Off Debt</span>
+              <a href="book-total-money-makeover.html" style="
+                display: inline-block;
+                margin-top: 14px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: var(--teal);
+              ">Read summary →</a>
+            </div>
+          </article>
+
+          <!-- ── Book 3 ─────────────────────────────────────── -->
+          <article class="book-card">
+            <a href="book-rich-dad-poor-dad.html" class="book-card-link" aria-label="Read summary: Rich Dad Poor Dad by Robert Kiyosaki">
+              <div class="book-cover cover-3" aria-hidden="true">
+                <div class="book-cover-spine"></div>
+                <span class="book-cover-title">Rich Dad Poor Dad</span>
+              </div>
+            </a>
+            <div class="book-info">
+              <span class="book-author">Robert T. Kiyosaki</span>
+              <h3><a href="book-rich-dad-poor-dad.html">Rich Dad Poor Dad</a></h3>
+              <p>
+                A classic that challenges traditional ideas about working
+                for money versus making money work for you. Uses story-form
+                to explain assets, liabilities, and financial mindset.
+              </p>
+              <span class="book-level">🟡 Best for: Mindset Shift</span>
+              <a href="book-rich-dad-poor-dad.html" style="
+                display: inline-block;
+                margin-top: 14px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: var(--teal);
+              ">Read summary →</a>
+            </div>
+          </article>
+
+          <!-- ── Book 4 ─────────────────────────────────────── -->
+          <article class="book-card">
+            <a href="book-automatic-millionaire.html" class="book-card-link" aria-label="Read summary: The Automatic Millionaire by David Bach">
+              <div class="book-cover cover-4" aria-hidden="true">
+                <div class="book-cover-spine"></div>
+                <span class="book-cover-title">The Automatic Millionaire</span>
+              </div>
+            </a>
+            <div class="book-info">
+              <span class="book-author">David Bach</span>
+              <h3><a href="book-automatic-millionaire.html">The Automatic Millionaire</a></h3>
+              <p>
+                Introduces the "Latte Factor" — how small daily expenses
+                add up — and a system for automating every financial goal
+                so you never have to rely on willpower to save again.
+              </p>
+              <span class="book-level">🟢 Best for: Building Habits</span>
+              <a href="book-automatic-millionaire.html" style="
+                display: inline-block;
+                margin-top: 14px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: var(--teal);
+              ">Read summary →</a>
+            </div>
+          </article>
+
+          <!-- ── Book 5 ─────────────────────────────────────── -->
+          <article class="book-card">
+            <a href="book-your-money-or-your-life.html" class="book-card-link" aria-label="Read summary: Your Money or Your Life by Vicki Robin">
+              <div class="book-cover cover-5" aria-hidden="true">
+                <div class="book-cover-spine"></div>
+                <span class="book-cover-title">Your Money or Your Life</span>
+              </div>
+            </a>
+            <div class="book-info">
+              <span class="book-author">Vicki Robin &amp; Joe Dominguez</span>
+              <h3><a href="book-your-money-or-your-life.html">Your Money or Your Life</a></h3>
+              <p>
+                A deeper look at the relationship between time, money, and
+                life satisfaction. Introduces the concept of "life energy" —
+                how many hours of your life you trade for each purchase.
+              </p>
+              <span class="book-level">🟡 Best for: Values &amp; Purpose</span>
+              <a href="book-your-money-or-your-life.html" style="
+                display: inline-block;
+                margin-top: 14px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: var(--teal);
+              ">Read summary →</a>
+            </div>
+          </article>
+
+          <!-- ── Book 6 ─────────────────────────────────────── -->
+          <article class="book-card">
+            <a href="book-psychology-of-money.html" class="book-card-link" aria-label="Read summary: The Psychology of Money by Morgan Housel">
+              <div class="book-cover cover-6" aria-hidden="true">
+                <div class="book-cover-spine"></div>
+                <span class="book-cover-title">The Psychology of Money</span>
+              </div>
+            </a>
+            <div class="book-info">
+              <span class="book-author">Morgan Housel</span>
+              <h3><a href="book-psychology-of-money.html">The Psychology of Money</a></h3>
+              <p>
+                19 short stories about how people think about wealth, greed,
+                and happiness. Explains why smart people make bad money
+                decisions — and what to do instead.
+              </p>
+              <span class="book-level">🟡 Best for: Thinking Smarter</span>
+              <a href="book-psychology-of-money.html" style="
+                display: inline-block;
+                margin-top: 14px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: var(--teal);
+              ">Read summary →</a>
+            </div>
+          </article>
+
+        </div><!-- /.card-grid -->
+
+        <!-- Tip callout -->
+        <div style="
+          margin-top: 56px;
+          background: rgba(43, 122, 120, 0.07);
+          border: 1px solid var(--border);
+          border-radius: var(--radius-md);
+          padding: 28px 32px;
+          display: flex;
+          gap: 16px;
+          align-items: flex-start;
+        ">
+          <span style="font-size: 1.8rem; flex-shrink: 0;" aria-hidden="true">📖</span>
+          <div>
+            <h3 style="color: var(--teal); margin-bottom: 8px; font-size: 1rem;">
+              Where to Get These Books for Free
+            </h3>
+            <p style="font-size: 0.9rem; color: var(--text-body);">
+              Most of these titles are available at your local public library — including digital copies through apps like Libby or OverDrive.
+              Many are also available as free audiobooks on YouTube or as summaries on platforms like Blinkist.
+              You don't need to spend money to start learning about money.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="FinStart Home">
+            <img src="img/logo-new.jpg" alt="FinStart logo" class="footer-logo-img" />
+          </a>
+          <p>A free personal finance resource hub for young adults and students exploring budgeting for the very first time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Budgeting Rules</a></li>
+            <li><a href="books.html">Resource Library</a></li>
+            <li><a href="templates.html">Worksheets</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="rules.html">50/30/20 Rule</a></li>
+            <li><a href="rules.html">Pay Yourself First</a></li>
+            <li><a href="rules.html">Emergency Fund</a></li>
+            <li><a href="books.html">Beginner Books</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 FinStart. Free to use and share.</p>
+        <p class="footer-disclaimer">For educational purposes only. Not professional financial advice.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

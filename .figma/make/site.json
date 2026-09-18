@@ -1,0 +1,10 @@
+{
+  "description": "A user-friendly personal finance resource hub offering budgeting guidance, rules, and printable worksheets for young adults and students.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

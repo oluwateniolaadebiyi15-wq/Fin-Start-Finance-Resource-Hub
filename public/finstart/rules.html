@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simple, beginner-friendly budgeting rules explained clearly — 50/30/20, Pay Yourself First, and more." />
+  <title>Budgeting Rules — FinStart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dark mode toggle: hidden checkbox — CSS :has() does the rest, no JavaScript -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" />
+
+
+  <!-- ========================================================
+       NAVIGATION BAR  (identical on every page)
+       The "active" class highlights the current page link.
+  ======================================================== -->
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-logo" href="index.html" aria-label="FinStart Home">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="navbar-logo-img" />
+      </a>
+      <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="rules.html" class="active">Rules</a>
+        <a href="books.html">Books</a>
+        <a href="templates.html">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Login</a>
+        <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="icon-light">☀️ Light</span>
+          <span class="icon-dark">🌙 Dark</span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       PAGE HEADER  (coloured banner at top of interior pages)
+  ======================================================== -->
+  <section class="page-header" aria-label="Page title">
+    <div class="container">
+      <span class="eyebrow">📐 Beginner-Friendly Frameworks</span>
+      <h1>Budgeting Rules That Work</h1>
+      <p>
+        Six proven frameworks — explained simply, with real-life examples.
+        Pick one that fits your lifestyle and start today.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       MAIN CONTENT — Card grid of budgeting rules
+       Each card: number badge, title, explanation, and a tip.
+  ======================================================== -->
+  <main>
+    <section style="padding: var(--section-gap) 0;" aria-labelledby="rules-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="rules-heading">6 Rules Every Beginner Should Know</h2>
+          <p>You don't need to follow every rule at once. Start with one and build from there.</p>
+        </div>
+
+        <!-- CSS Grid — stacks to 1 column on mobile via auto-fill -->
+        <div class="card-grid">
+
+          <!-- ── Rule 1: 50/30/20 ──────────────────────────── -->
+          <article class="rule-card">
+            <span class="rule-number" aria-label="Rule 1">1</span>
+            <h3>The 50/30/20 Rule</h3>
+            <p>
+              Split your after-tax income into three simple buckets:
+              <strong>50%</strong> for essentials (rent, food, transport),
+              <strong>30%</strong> for wants (dining out, subscriptions, hobbies),
+              and <strong>20%</strong> for savings or paying off debt.
+            </p>
+            <p>
+              This rule is popular because it gives you structure without
+              making you count every single cent. It's flexible enough for
+              students and salaried workers alike.
+            </p>
+            <div class="rule-tip">
+              💡 <strong>Example:</strong> If you earn $2,000/month take-home,
+              aim for $1,000 in needs, $600 in wants, and $400 in savings.
+            </div>
+          </article>
+
+          <!-- ── Rule 2: Pay Yourself First ───────────────── -->
+          <article class="rule-card">
+            <span class="rule-number" aria-label="Rule 2">2</span>
+            <h3>Pay Yourself First</h3>
+            <p>
+              The moment your paycheck arrives, immediately move a set amount
+              to savings — <em>before</em> you pay any bills or spend on anything.
+              Treat savings like a non-negotiable bill you owe yourself.
+            </p>
+            <p>
+              This flips the usual habit of "saving what's left over" into
+              "spending what's left over." Even saving $25 a paycheck builds
+              the habit that matters most.
+            </p>
+            <div class="rule-tip">
+              💡 <strong>Tip:</strong> Set up an automatic transfer on payday.
+              If the money is never in your checking account, you won't miss it.
+            </div>
+          </article>
+
+          <!-- ── Rule 3: Zero-Based Budget ─────────────────── -->
+          <article class="rule-card">
+            <span class="rule-number" aria-label="Rule 3">3</span>
+            <h3>Zero-Based Budgeting</h3>
+            <p>
+              Assign every single dollar of your income a specific job — needs,
+              wants, savings, debt repayment — until your budget balances at
+              zero. Income minus all planned spending = $0.
+            </p>
+            <p>
+              Nothing is unaccounted for. This works especially well for
+              irregular expenses like annual subscriptions, car maintenance,
+              or birthday gifts.
+            </p>
+            <div class="rule-tip">
+              💡 <strong>Try it:</strong> List all income at the top, then
+              list every planned expense below until the remainder is $0.
+            </div>
+          </article>
+
+          <!-- ── Rule 4: The Envelope Method ───────────────── -->
+          <article class="rule-card">
+            <span class="rule-number" aria-label="Rule 4">4</span>
+            <h3>The Envelope Method</h3>
+            <p>
+              Divide your cash (or a digital version with named accounts) into
+              labelled envelopes for each spending category — groceries, gas,
+              eating out. When an envelope is empty, that category is done for
+              the month.
+            </p>
+            <p>
+              This makes overspending physically impossible. It's tactile,
+              visual, and surprisingly effective for people who struggle with
+              abstract numbers on a screen.
+            </p>
+            <div class="rule-tip">
+              💡 <strong>Modern twist:</strong> Use separate savings accounts
+              or sub-accounts in banking apps as digital envelopes.
+            </div>
+          </article>
+
+          <!-- ── Rule 5: 6-Month Emergency Fund ───────────── -->
+          <article class="rule-card">
+            <span class="rule-number" aria-label="Rule 5">5</span>
+            <h3>The 6-Month Emergency Rule</h3>
+            <p>
+              Build a financial safety net equal to <strong>3–6 months</strong>
+              of essential living expenses before focusing on investing or
+              big purchases. This protects you from job loss, medical bills,
+              or any unexpected life event.
+            </p>
+            <p>
+              Keep this fund in a high-yield savings account — accessible but
+              separate from your everyday spending so you won't dip into it
+              for non-emergencies.
+            </p>
+            <div class="rule-tip">
+              💡 <strong>Starting out?</strong> Aim for even $500–$1,000 as
+              a "starter emergency fund" before doing anything else.
+            </div>
+          </article>
+
+          <!-- ── Rule 6: The 1% Investing Rule ─────────────── -->
+          <article class="rule-card">
+            <span class="rule-number" aria-label="Rule 6">6</span>
+            <h3>The 1% Investing Rule</h3>
+            <p>
+              If investing feels impossible right now, start by putting just
+              <strong>1%</strong> of your income into a retirement account or
+              index fund each month. Increase it by 1% every six months.
+            </p>
+            <p>
+              This rule breaks through the mental barrier of "I can't afford
+              to invest" by starting so small that it's hard to say no —
+              then letting compounding do the work over time.
+            </p>
+            <div class="rule-tip">
+              💡 <strong>Reality check:</strong> 1% of a $2,000/month income
+              is just $20. After 30 years at a 7% average return, that
+              $20/month becomes over $24,000.
+            </div>
+          </article>
+
+        </div><!-- /.card-grid -->
+
+        <!-- Bottom CTA: point users toward templates -->
+        <div style="text-align: center; margin-top: 60px;">
+          <p style="margin-bottom: 20px; color: var(--text-muted);">
+            Ready to put one of these rules into practice?
+          </p>
+          <a href="templates.html" class="btn btn-primary">Get a Free Budget Template →</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       FOOTER  (identical on every page)
+  ======================================================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="FinStart Home">
+            <img src="img/logo-new.jpg" alt="FinStart logo" class="footer-logo-img" />
+          </a>
+          <p>
+            A free personal finance resource hub for young adults and students
+            exploring budgeting for the very first time.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Budgeting Rules</a></li>
+            <li><a href="books.html">Resource Library</a></li>
+            <li><a href="templates.html">Worksheets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="rules.html">50/30/20 Rule</a></li>
+            <li><a href="rules.html">Pay Yourself First</a></li>
+            <li><a href="rules.html">Emergency Fund</a></li>
+            <li><a href="books.html">Beginner Books</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 FinStart. Free to use and share.</p>
+        <p class="footer-disclaimer">For educational purposes only. Not professional financial advice.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FinStart — Simple, friendly personal finance resources for young adults and students." />
+  <title>FinStart — Personal Finance Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dark mode toggle: hidden checkbox — CSS :has() does the rest, no JavaScript -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" />
+
+
+  <!-- ========================================================
+       NAVIGATION BAR
+       Logo at top-left, links at top-right.
+       Add class="active" to the current page link.
+  ======================================================== -->
+  <header class="navbar">
+    <div class="container">
+      <!-- Logo: points to an SVG file in the img/ folder -->
+      <a class="navbar-logo" href="index.html" aria-label="FinStart Home">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="navbar-logo-img" />
+      </a>
+
+      <!-- Primary navigation links -->
+      <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="books.html">Books</a>
+        <a href="templates.html">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Login</a>
+        <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="icon-light">☀️ Light</span>
+          <span class="icon-dark">🌙 Dark</span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       HERO SECTION
+       Main welcome message with a short value proposition.
+  ======================================================== -->
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Left: headline + CTA -->
+          <div class="hero-text">
+            <span class="hero-eyebrow">Free · No sign-up needed</span>
+            <h1 id="hero-heading" class="hero-title">
+              Your Money,<br /><span>Simplified.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Learn the most trusted budgeting rules, explore beginner finance
+              books, and download printable worksheets — all in one calm,
+              easy-to-follow hub built for ages 15 to 40.
+            </p>
+            <div class="hero-ctas">
+              <a href="rules.html" class="btn btn-primary">Explore Budgeting Rules</a>
+              <a href="templates.html" class="btn btn-outline">Get Free Templates</a>
+            </div>
+          </div>
+
+          <!-- Right: decorative stats card (pure CSS, no JS) -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-stats">
+
+              <!-- Quick stats -->
+              <div class="stat-card">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Budgeting Rules</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Recommended Books</span>
+              </div>
+
+              <!-- 50/30/20 visual preview -->
+              <div class="stat-card wide">
+                <div class="progress-label">
+                  <span>50% — Needs</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="fill needs" style="width: 50%;"></div>
+                </div>
+
+                <div class="progress-label">
+                  <span>30% — Wants</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="fill wants" style="width: 30%;"></div>
+                </div>
+
+                <div class="progress-label">
+                  <span>20% — Savings</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="fill savings" style="width: 20%;"></div>
+                </div>
+
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 8px;">
+                  The popular 50/30/20 rule — our Rule of the Month ↓
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         RULE OF THE MONTH CARD
+         Highlighted budgeting framework for new visitors.
+    ====================================================== -->
+    <section class="rule-of-month" aria-labelledby="rotm-heading">
+      <div class="container">
+
+        <div class="rotm-card">
+
+          <!-- Left: description -->
+          <div>
+            <span class="rotm-badge">📅 Rule of the Month</span>
+            <h2 id="rotm-heading">The 50/30/20 Rule</h2>
+            <p>
+              The simplest budgeting framework for beginners: split your
+              take-home pay into three clear buckets. Needs come first, wants
+              second, and savings are never an afterthought.
+            </p>
+            <a href="rules.html" class="btn btn-outline"
+               style="border-color: rgba(255,255,255,0.5); color: white;">
+              See All Rules →
+            </a>
+          </div>
+
+          <!-- Right: visual breakdown bars -->
+          <div class="rotm-breakdown" aria-label="50/30/20 breakdown">
+
+            <div class="rotm-item">
+              <span class="rotm-percent">50%</span>
+              <div class="rotm-bar-wrap">
+                <div class="rotm-fill w50"></div>
+              </div>
+              <span class="rotm-label-text">Needs</span>
+            </div>
+
+            <div class="rotm-item">
+              <span class="rotm-percent">30%</span>
+              <div class="rotm-bar-wrap">
+                <div class="rotm-fill w30"></div>
+              </div>
+              <span class="rotm-label-text">Wants</span>
+            </div>
+
+            <div class="rotm-item">
+              <span class="rotm-percent">20%</span>
+              <div class="rotm-bar-wrap">
+                <div class="rotm-fill w20"></div>
+              </div>
+              <span class="rotm-label-text">Savings</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================
+         WHY FINSTART — 3 Feature Cards
+    ====================================================== -->
+    <section class="features" aria-labelledby="features-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="eyebrow">Why FinStart?</span>
+          <h2 id="features-heading">Everything a Beginner Needs</h2>
+          <p>No jargon, no paywalls, no pressure — just friendly guidance to help you start your financial journey today.</p>
+        </div>
+
+        <div class="card-grid">
+
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">📐</div>
+            <h3>Simple Rules</h3>
+            <p>
+              Proven budgeting frameworks like 50/30/20, Pay Yourself First, and
+              Zero-Based Budgeting — explained in plain everyday language.
+            </p>
+            <a href="rules.html" style="font-weight: 600; font-size: 0.88rem; display: inline-block; margin-top: 14px;">
+              Browse rules →
+            </a>
+          </div>
+
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">📚</div>
+            <h3>Curated Books</h3>
+            <p>
+              Six highly-recommended personal finance titles chosen specifically
+              for readers with no prior money management experience.
+            </p>
+            <a href="books.html" style="font-weight: 600; font-size: 0.88rem; display: inline-block; margin-top: 14px;">
+              See book picks →
+            </a>
+          </div>
+
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">🖨️</div>
+            <h3>Free Worksheets</h3>
+            <p>
+              Print-ready budget tracker templates — just grab, print, and fill in.
+              No app required, no data collected, no strings attached.
+            </p>
+            <a href="templates.html" style="font-weight: 600; font-size: 0.88rem; display: inline-block; margin-top: 14px;">
+              Get templates →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="FinStart Home">
+            <img src="img/logo-new.jpg" alt="FinStart logo" class="footer-logo-img" />
+          </a>
+          <p>
+            A free personal finance resource hub for young adults and students
+            exploring budgeting for the very first time.
+          </p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Budgeting Rules</a></li>
+            <li><a href="books.html">Resource Library</a></li>
+            <li><a href="templates.html">Worksheets</a></li>
+          </ul>
+        </div>
+
+        <!-- Topics -->
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="rules.html">50/30/20 Rule</a></li>
+            <li><a href="rules.html">Pay Yourself First</a></li>
+            <li><a href="rules.html">Emergency Fund</a></li>
+            <li><a href="books.html">Beginner Books</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2025 FinStart. Free to use and share.</p>
+        <p class="footer-disclaimer">
+          For educational purposes only. Not professional financial advice.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

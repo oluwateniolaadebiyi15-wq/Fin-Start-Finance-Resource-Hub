@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community — FinStart</title>
+  <meta name="description" content="Join the FinStart community — discuss budgeting, share progress, ask questions, and learn alongside thousands of young adults." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Dark mode toggle: hidden checkbox — CSS :has() does the rest, no JavaScript -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" />
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="container">
+      <a class="navbar-logo" href="index.html" aria-label="FinStart Home">
+        <img src="img/logo-new.jpg" alt="FinStart logo" class="navbar-logo-img" />
+      </a>
+      <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="rules.html">Rules</a>
+        <a href="books.html">Books</a>
+        <a href="templates.html">Templates</a>
+        <a href="blog.html">Blog</a>
+        <a href="community.html" class="active">Community</a>
+        <a href="about.html">About</a>
+        <a href="login.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Login</a>
+        <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+          <span class="icon-light">☀️ Light</span>
+          <span class="icon-dark">🌙 Dark</span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== PAGE HEADER ===================== -->
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow">👥 Members &amp; Discussions</p>
+        <h1>The FinStart Community</h1>
+        <p>Ask questions, share wins, discuss books, and learn from people on the same journey. No judgement. Just honest money talk.</p>
+      </div>
+    </section>
+
+    <!-- ===================== JOIN CTA BANNER ===================== -->
+    <div style="
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    ">
+      <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+        <p style="font-size:0.95rem; color:var(--text-body); margin:0;">
+          <strong style="color:var(--text-dark);">Join 2,400+ members</strong> already learning together.
+          Discussions are visible to everyone — but you need an account to post.
+        </p>
+        <a href="login.html" class="btn btn-primary" style="flex-shrink:0;">Join the Community →</a>
+      </div>
+    </div>
+
+    <!-- ===================== MAIN TWO-COLUMN LAYOUT ===================== -->
+    <section style="padding: var(--section-gap) 0;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 300px; gap: 36px; align-items: start;">
+
+          <!-- ============ LEFT: DISCUSSIONS ============ -->
+          <div>
+
+            <!-- Category filter tabs -->
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px;">
+              <a href="#" style="padding:6px 16px; background:var(--teal); color:white; border-radius:100px; font-size:0.82rem; font-weight:600; text-decoration:none;">All Topics</a>
+              <a href="#" style="padding:6px 16px; background:var(--card-bg); border:1px solid var(--border); color:var(--text-muted); border-radius:100px; font-size:0.82rem; font-weight:500; text-decoration:none;">Budgeting Q&amp;A</a>
+              <a href="#" style="padding:6px 16px; background:var(--card-bg); border:1px solid var(--border); color:var(--text-muted); border-radius:100px; font-size:0.82rem; font-weight:500; text-decoration:none;">Savings Goals</a>
+              <a href="#" style="padding:6px 16px; background:var(--card-bg); border:1px solid var(--border); color:var(--text-muted); border-radius:100px; font-size:0.82rem; font-weight:500; text-decoration:none;">Debt Freedom</a>
+              <a href="#" style="padding:6px 16px; background:var(--card-bg); border:1px solid var(--border); color:var(--text-muted); border-radius:100px; font-size:0.82rem; font-weight:500; text-decoration:none;">Book Club</a>
+              <a href="#" style="padding:6px 16px; background:var(--card-bg); border:1px solid var(--border); color:var(--text-muted); border-radius:100px; font-size:0.82rem; font-weight:500; text-decoration:none;">Student Finance</a>
+            </div>
+
+            <!-- Thread 1: Budgeting Q&A — Hot -->
+            <article style="
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-left: 3px solid var(--mint);
+              border-radius: 12px;
+              padding: 20px 22px;
+              margin-bottom: 12px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 16px;
+              align-items: center;
+            ">
+              <!-- Author avatar -->
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">F</div>
+              <!-- Thread info -->
+              <div>
+                <div style="margin-bottom: 6px;">
+                  <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 3px 10px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block; margin-right: 8px;">Budgeting Q&amp;A</span>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">🔥 Hot</span>
+                </div>
+                <h3 style="font-size: 0.98rem; font-weight: 600; margin-bottom: 5px; line-height: 1.4;">
+                  <a href="#" style="color: var(--text-dark); text-decoration: none;">Is the 50/30/20 rule realistic in Lagos with current prices?</a>
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+                  With rent eating 60% of my salary and food costs going up every week, I genuinely can't make this rule work. Has anyone adapted it for Nigerian realities?
+                </p>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Fatima A. &nbsp;·&nbsp; 2 hours ago</span>
+              </div>
+              <!-- Stats -->
+              <div style="text-align:right; flex-shrink:0; min-width:60px;">
+                <span style="display:block; font-size:1rem; font-weight:700; color:var(--text-dark);">34</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted);">replies</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted); margin-top:4px;">412 views</span>
+              </div>
+            </article>
+
+            <!-- Thread 2: Savings Goals — Success Story -->
+            <article style="
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-left: 3px solid var(--mint);
+              border-radius: 12px;
+              padding: 20px 22px;
+              margin-bottom: 12px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 16px;
+              align-items: center;
+            ">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: #3AAFA9; color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">C</div>
+              <div>
+                <div style="margin-bottom: 6px;">
+                  <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 3px 10px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block; margin-right: 8px;">Savings Goals</span>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">✅ Success Story</span>
+                </div>
+                <h3 style="font-size: 0.98rem; font-weight: 600; margin-bottom: 5px; line-height: 1.4;">
+                  <a href="#" style="color: var(--text-dark); text-decoration: none;">Finally paid off my NYSC credit card debt — here's what worked</a>
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+                  14 months, three failed attempts, and one breakthrough moment. Sharing the full story because someone out there needs to hear it today.
+                </p>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Chukwuemeka O. &nbsp;·&nbsp; 1 day ago</span>
+              </div>
+              <div style="text-align:right; flex-shrink:0; min-width:60px;">
+                <span style="display:block; font-size:1rem; font-weight:700; color:var(--text-dark);">67</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted);">replies</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted); margin-top:4px;">891 views</span>
+              </div>
+            </article>
+
+            <!-- Thread 3: Student Finance — No badge -->
+            <article style="
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-left: 3px solid var(--mint);
+              border-radius: 12px;
+              padding: 20px 22px;
+              margin-bottom: 12px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 16px;
+              align-items: center;
+            ">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">A</div>
+              <div>
+                <div style="margin-bottom: 6px;">
+                  <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 3px 10px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block;">Student Finance</span>
+                </div>
+                <h3 style="font-size: 0.98rem; font-weight: 600; margin-bottom: 5px; line-height: 1.4;">
+                  <a href="#" style="color: var(--text-dark); text-decoration: none;">Best bank for a first savings account in Nigeria — 2025 edition</a>
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+                  I've been comparing Kuda, Opay, PiggyVest and traditional banks. Here's my honest breakdown after using all four for 6 months.
+                </p>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Aisha M. &nbsp;·&nbsp; 3 days ago</span>
+              </div>
+              <div style="text-align:right; flex-shrink:0; min-width:60px;">
+                <span style="display:block; font-size:1rem; font-weight:700; color:var(--text-dark);">28</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted);">replies</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted); margin-top:4px;">560 views</span>
+              </div>
+            </article>
+
+            <!-- Thread 4: Book Club -->
+            <article style="
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-left: 3px solid var(--mint);
+              border-radius: 12px;
+              padding: 20px 22px;
+              margin-bottom: 12px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 16px;
+              align-items: center;
+            ">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: #3AAFA9; color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">D</div>
+              <div>
+                <div style="margin-bottom: 6px;">
+                  <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 3px 10px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block; margin-right: 8px;">Book Club</span>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">📚 Book Club</span>
+                </div>
+                <h3 style="font-size: 0.98rem; font-weight: 600; margin-bottom: 5px; line-height: 1.4;">
+                  <a href="#" style="color: var(--text-dark); text-decoration: none;">Reading 'I Will Teach You to Be Rich' — Chapter 3 discussion thread</a>
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+                  The section on automating your finances completely changed how I think about willpower. What did everyone else take away from this chapter?
+                </p>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">David T. &nbsp;·&nbsp; 5 days ago</span>
+              </div>
+              <div style="text-align:right; flex-shrink:0; min-width:60px;">
+                <span style="display:block; font-size:1rem; font-weight:700; color:var(--text-dark);">19</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted);">replies</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted); margin-top:4px;">234 views</span>
+              </div>
+            </article>
+
+            <!-- Thread 5: Budgeting Q&A — No badge -->
+            <article style="
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-left: 3px solid var(--mint);
+              border-radius: 12px;
+              padding: 20px 22px;
+              margin-bottom: 12px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 16px;
+              align-items: center;
+            ">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">N</div>
+              <div>
+                <div style="margin-bottom: 6px;">
+                  <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 3px 10px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block;">Budgeting Q&amp;A</span>
+                </div>
+                <h3 style="font-size: 0.98rem; font-weight: 600; margin-bottom: 5px; line-height: 1.4;">
+                  <a href="#" style="color: var(--text-dark); text-decoration: none;">How much should I actually save before I start investing?</a>
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+                  I keep hearing different numbers — 3 months expenses, 6 months, 1 year... What's the actual answer for someone just starting out with no dependents?
+                </p>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Ngozi E. &nbsp;·&nbsp; 1 week ago</span>
+              </div>
+              <div style="text-align:right; flex-shrink:0; min-width:60px;">
+                <span style="display:block; font-size:1rem; font-weight:700; color:var(--text-dark);">41</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted);">replies</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted); margin-top:4px;">673 views</span>
+              </div>
+            </article>
+
+            <!-- Thread 6: Debt Freedom — Hot -->
+            <article style="
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-left: 3px solid var(--mint);
+              border-radius: 12px;
+              padding: 20px 22px;
+              margin-bottom: 12px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 16px;
+              align-items: center;
+            ">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: #3AAFA9; color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">T</div>
+              <div>
+                <div style="margin-bottom: 6px;">
+                  <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 3px 10px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block; margin-right: 8px;">Debt Freedom</span>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">🔥 Hot</span>
+                </div>
+                <h3 style="font-size: 0.98rem; font-weight: 600; margin-bottom: 5px; line-height: 1.4;">
+                  <a href="#" style="color: var(--text-dark); text-decoration: none;">Debt snowball vs debt avalanche — which actually works better?</a>
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+                  I tried the avalanche method for 4 months and quit. Switched to snowball last month and I've already cleared two debts. Data point: psychology matters.
+                </p>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Taiwo B. &nbsp;·&nbsp; 1 week ago</span>
+              </div>
+              <div style="text-align:right; flex-shrink:0; min-width:60px;">
+                <span style="display:block; font-size:1rem; font-weight:700; color:var(--text-dark);">52</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted);">replies</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted); margin-top:4px;">720 views</span>
+              </div>
+            </article>
+
+            <!-- Thread 7: Student Finance — Success Story -->
+            <article style="
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-left: 3px solid var(--mint);
+              border-radius: 12px;
+              padding: 20px 22px;
+              margin-bottom: 12px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 16px;
+              align-items: center;
+            ">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: var(--teal); color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">B</div>
+              <div>
+                <div style="margin-bottom: 6px;">
+                  <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 3px 10px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block; margin-right: 8px;">Student Finance</span>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">✅ Success Story</span>
+                </div>
+                <h3 style="font-size: 0.98rem; font-weight: 600; margin-bottom: 5px; line-height: 1.4;">
+                  <a href="#" style="color: var(--text-dark); text-decoration: none;">Budgeting on a ₦30,000/month allowance as a university student</a>
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+                  My parents send ₦30k and I used to run out by the 15th every month. After applying the envelope method (adapted for mobile money), everything changed.
+                </p>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Blessing K. &nbsp;·&nbsp; 2 weeks ago</span>
+              </div>
+              <div style="text-align:right; flex-shrink:0; min-width:60px;">
+                <span style="display:block; font-size:1rem; font-weight:700; color:var(--text-dark);">89</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted);">replies</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted); margin-top:4px;">1.2k views</span>
+              </div>
+            </article>
+
+            <!-- Thread 8: Book Club -->
+            <article style="
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-left: 3px solid var(--mint);
+              border-radius: 12px;
+              padding: 20px 22px;
+              margin-bottom: 12px;
+              display: grid;
+              grid-template-columns: auto 1fr auto;
+              gap: 16px;
+              align-items: center;
+            ">
+              <div style="width: 38px; height: 38px; border-radius: 50%; background: #3AAFA9; color: white; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">E</div>
+              <div>
+                <div style="margin-bottom: 6px;">
+                  <span style="background: rgba(58,175,169,0.15); color: var(--mint); padding: 3px 10px; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block; margin-right: 8px;">Book Club</span>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">📚 Book Club</span>
+                </div>
+                <h3 style="font-size: 0.98rem; font-weight: 600; margin-bottom: 5px; line-height: 1.4;">
+                  <a href="#" style="color: var(--text-dark); text-decoration: none;">Morgan Housel said 'reasonable &gt; rational' — what does this mean for us?</a>
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin-bottom: 8px;">
+                  I re-read this section four times. The idea that the mathematically optimal financial plan is worthless if you can't stick to it changed my entire approach.
+                </p>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Emeka F. &nbsp;·&nbsp; 2 weeks ago</span>
+              </div>
+              <div style="text-align:right; flex-shrink:0; min-width:60px;">
+                <span style="display:block; font-size:1rem; font-weight:700; color:var(--text-dark);">23</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted);">replies</span>
+                <span style="display:block; font-size:0.72rem; color:var(--text-muted); margin-top:4px;">310 views</span>
+              </div>
+            </article>
+
+          </div><!-- /left column -->
+
+          <!-- ============ RIGHT SIDEBAR ============ -->
+          <aside>
+
+            <!-- Box 1: Community Guidelines -->
+            <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:12px; padding:22px; margin-bottom:20px;">
+              <h3 style="font-size:0.85rem; color:var(--mint); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:14px;">Community Guidelines</h3>
+              <ul style="display:flex; flex-direction:column; gap:10px; list-style:none; padding:0; margin:0;">
+                <li style="font-size:0.85rem; color:var(--text-body); line-height:1.4;">✅ Be kind — everyone here is learning</li>
+                <li style="font-size:0.85rem; color:var(--text-body); line-height:1.4;">✅ Share real experiences, not just opinions</li>
+                <li style="font-size:0.85rem; color:var(--text-body); line-height:1.4;">✅ No promotional content or spam</li>
+                <li style="font-size:0.85rem; color:var(--text-body); line-height:1.4;">✅ Respect privacy — don't share personal financial details publicly</li>
+                <li style="font-size:0.85rem; color:var(--text-body); line-height:1.4;">✅ Tag your post with the right category</li>
+              </ul>
+            </div>
+
+            <!-- Box 2: Trending Topics -->
+            <div style="background:var(--card-bg); border:1px solid var(--border); border-radius:12px; padding:22px; margin-bottom:20px;">
+              <h3 style="font-size:0.85rem; color:var(--mint); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:14px;">Trending This Week</h3>
+              <div>
+                <a href="#" style="background:rgba(43,122,120,0.1); color:var(--mint); padding:5px 12px; border-radius:100px; font-size:0.78rem; font-weight:600; display:inline-block; margin:4px 4px 4px 0; text-decoration:none;">#EmergencyFund</a>
+                <a href="#" style="background:rgba(43,122,120,0.1); color:var(--mint); padding:5px 12px; border-radius:100px; font-size:0.78rem; font-weight:600; display:inline-block; margin:4px 4px 4px 0; text-decoration:none;">#NigerianBanks</a>
+                <a href="#" style="background:rgba(43,122,120,0.1); color:var(--mint); padding:5px 12px; border-radius:100px; font-size:0.78rem; font-weight:600; display:inline-block; margin:4px 4px 4px 0; text-decoration:none;">#DebtFreeJourney</a>
+                <a href="#" style="background:rgba(43,122,120,0.1); color:var(--mint); padding:5px 12px; border-radius:100px; font-size:0.78rem; font-weight:600; display:inline-block; margin:4px 4px 4px 0; text-decoration:none;">#50-30-20</a>
+                <a href="#" style="background:rgba(43,122,120,0.1); color:var(--mint); padding:5px 12px; border-radius:100px; font-size:0.78rem; font-weight:600; display:inline-block; margin:4px 4px 4px 0; text-decoration:none;">#FirstPaycheck</a>
+              </div>
+            </div>
+
+            <!-- Box 3: Join CTA -->
+            <div style="background:linear-gradient(135deg,#2B7A78,#3AAFA9); border-radius:12px; padding:24px; text-align:center;">
+              <p style="font-size:2rem; margin-bottom:8px;">💬</p>
+              <h3 style="color:white; font-size:1rem; margin-bottom:8px;">Ready to Join In?</h3>
+              <p style="color:rgba(255,255,255,0.8); font-size:0.82rem; margin-bottom:16px;">Create a free account to post, reply, and track your financial journey alongside others.</p>
+              <a href="login.html" class="btn" style="background:white; color:#2B7A78; width:100%; justify-content:center; font-weight:700; font-size:0.88rem; display:block; box-sizing:border-box;">Create Free Account</a>
+            </div>
+
+          </aside><!-- /sidebar -->
+
+        </div><!-- /two-column grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" aria-label="FinStart Home">
+            <img src="img/logo-new.jpg" alt="FinStart logo" class="footer-logo-img" />
+          </a>
+          <p>A free personal finance resource hub for young adults and students exploring budgeting for the very first time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Budgeting Rules</a></li>
+            <li><a href="books.html">Resource Library</a></li>
+            <li><a href="templates.html">Worksheets</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="rules.html">50/30/20 Rule</a></li>
+            <li><a href="rules.html">Pay Yourself First</a></li>
+            <li><a href="rules.html">Emergency Fund</a></li>
+            <li><a href="books.html">Beginner Books</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 FinStart. Free to use and share.</p>
+        <p class="footer-disclaimer">For educational purposes only. Not professional financial advice.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
